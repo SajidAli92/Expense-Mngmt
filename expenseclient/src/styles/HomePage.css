@@ -1,0 +1,227 @@
+/* HomePage.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Layout Styling */
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .filters h6 {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .filters .ant-select,
+  .filters .ant-picker {
+    width: 100%;
+    min-width: 150px;
+  }
+  
+  .filters .ant-select-selector,
+  .filters .ant-picker-input {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+  }
+  
+  .filters .ant-select-selector:hover,
+  .filters .ant-picker-input:hover {
+    border-color: #1890ff;
+  }
+  
+  .filters .ant-select-selection-item,
+  .filters .ant-picker-input input {
+    font-size: 0.9rem;
+  }
+  
+  /* Switch Icons Styling */
+  .switch-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .switch-icons .anticon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .switch-icons .active-icon {
+    color: #1890ff;
+  }
+  
+  .switch-icons .inactive-icon {
+    color: #888;
+  }
+  
+  .switch-icons .anticon:hover {
+    color: #1890ff;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #40a9ff;
+  }
+  
+  /* Table Styling */
+  .ant-table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ant-table-thead > tr > th {
+    background-color: #f0f2f5;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .ant-table-tbody > tr > td {
+    color: #555;
+  }
+  
+  .ant-table-tbody > tr:hover > td {
+    background-color: #f0f2f5 !important;
+  }
+  
+  /* Actions Icons Styling */
+  .anticon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .anticon-edit {
+    color: #1890ff;
+  }
+  
+  .anticon-delete {
+    color: #ff4d4f;
+  }
+  
+  .anticon-edit:hover {
+    color: #40a9ff;
+  }
+  
+  .anticon-delete:hover {
+    color: #ff7875;
+  }
+  
+  /* Modal Styling */
+  .ant-modal {
+    border-radius: 8px;
+  }
+  
+  .ant-modal-header {
+    background-color: #f0f2f5;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .ant-modal-title {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .ant-modal-body {
+    padding: 1.5rem;
+  }
+  
+  .ant-modal-footer {
+    display: none;
+  }
+  
+  /* Form Styling */
+  .ant-form-item-label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .ant-input,
+  .ant-select-selector,
+  .ant-picker-input {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+  }
+  
+  .ant-input:focus,
+  .ant-select-selector:focus,
+  .ant-picker-input:focus {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  }
+  
+  .ant-input:hover,
+  .ant-select-selector:hover,
+  .ant-picker-input:hover {
+    border-color: #1890ff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .filters > div {
+      width: 100%;
+    }
+  
+    .switch-icons {
+      justify-content: flex-start;
+    }
+  
+    .ant-table {
+      overflow-x: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filters h6 {
+      font-size: 0.8rem;
+    }
+  
+    .filters .ant-select,
+    .filters .ant-picker {
+      min-width: 100%;
+    }
+  
+    .btn-primary {
+      width: 100%;
+    }
+  }

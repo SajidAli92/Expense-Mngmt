@@ -1,0 +1,15 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content{
+  width: 100vw;
+  height: auto;
+}
+
+.navbar{
+  background-color: rgba(244, 99, 32, 0.677) !important;
+}
+

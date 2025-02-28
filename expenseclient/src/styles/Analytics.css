@@ -1,0 +1,162 @@
+  @keyframes bubble {
+    0% {
+      transform: translateY(0) rotate(0);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+    }
+  }
+  
+  .bubble-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+  }
+  
+  .bubble-background div {
+    position: absolute;
+    bottom: -100px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: bubble 15s infinite;
+  }
+  
+  .bubble-background div:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+  }
+  
+  .bubble-background div:nth-child(2) {
+    left: 20%;
+    animation-delay: 2s;
+  }
+  
+  .bubble-background div:nth-child(3) {
+    left: 30%;
+    animation-delay: 4s;
+  }
+  
+  .bubble-background div:nth-child(4) {
+    left: 40%;
+    animation-delay: 6s;
+  }
+  
+  .bubble-background div:nth-child(5) {
+    left: 50%;
+    animation-delay: 8s;
+  }
+  
+  .bubble-background div:nth-child(6) {
+    left: 60%;
+    animation-delay: 10s;
+  }
+  
+  .bubble-background div:nth-child(7) {
+    left: 70%;
+    animation-delay: 12s;
+  }
+  
+  .bubble-background div:nth-child(8) {
+    left: 80%;
+    animation-delay: 14s;
+  }
+  
+  .bubble-background div:nth-child(9) {
+    left: 90%;
+    animation-delay: 16s;
+  }
+  
+  .bubble-background div:nth-child(10) {
+    left: 100%;
+    animation-delay: 18s;
+  }
+  
+  /* Card Styles */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Progress Circle Styles */
+  .ant-progress-circle {
+    margin: 10px;
+  }
+  
+  /* Text Colors */
+  .text-success {
+    color: #28a745 !important;
+  }
+  
+  .text-danger {
+    color: #dc3545 !important;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .card {
+      margin-bottom: 15px;
+    }
+  
+    .card-header {
+      font-size: 1em;
+    }
+  
+    .card-body {
+      padding: 15px;
+    }
+  }
+  
+  /* Additional Styles */
+  h4 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  h5 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .ant-progress-text {
+    font-size: 1em;
+    color: #333;
+  }
